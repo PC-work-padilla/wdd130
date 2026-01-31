@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #0a6cff;      /* azul río */
-    --secondary-color: #023047;    /* azul oscuro */
-    --accent-color: #ffb703;       /* amarillo aventura */
-    --background-color: #f8f9fa;   /* fondo claro */
-    --text-color: #1a1a1a;         /* texto */
+    --primary-color: #0a6cff;
+    --secondary-color: #023047;
+    --accent-color: #ffb703;
+    --background-color: #f8f9fa;
+    --text-color: #1a1a1a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -47,7 +47,7 @@ h1 {
 
 h2{
 
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     text-align: center;
     opacity: 0.9;
     width: 100%;
