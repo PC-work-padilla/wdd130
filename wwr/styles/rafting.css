@@ -33,6 +33,7 @@ header {
     align-items: center;
     background-color: var(--secondary-color);
     padding: 12px 24px;
+    color: white;
 }
 
 header nav {
