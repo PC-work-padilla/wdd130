@@ -85,17 +85,6 @@ nav {
     display: flex;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent-color);
-    color: #023047;
-}
-
 h2 {
 
     background-color: var(--secondary-color);
@@ -147,6 +136,17 @@ footer {
     width: 125px;
 }
 
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent-color);
+    color: #023047;
+}
+
 .history-content {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -183,4 +183,109 @@ footer {
     text-align: center;
     padding-top: 6px;
     font-size: 0.9rem;
+}
+
+.map-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 16px;
+    align-items: start;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+.contact-form form {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.contact-form fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 12px 16px;
+    align-items: center;
+}
+
+.contact-form label {
+    font-weight: 600px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid (0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.purpose {
+    grid-column: 2;
+    display: grid;
+    gap: 6px;
+    align-items: start;
+}
+
+.message-purpose {
+    grid-column: 1;
+}
+
+.purpose label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.contact-form label:has(input[type="checkbox"]) {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.contact-form button {
+    grid-column: 1 / -1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0 0.25);
+    cursor: pointer;
+}
+
+.employee {
+    margin-top: 32px;
+    text-align: ceneter;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 10px;
+}
+
+.employee img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.employee figcaption {
+    width: 100px;
+    font-size: 0.9rem;
+    margin: 0 auto;
 }
