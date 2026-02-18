@@ -95,6 +95,13 @@ h2 {
     color: white;
 }
 
+/* --- Trips Page */
+main h1 {
+    margin-bottom: 16px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -216,7 +223,7 @@ footer {
 }
 
 .contact-form label {
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 .contact-form input[type="text"],
@@ -224,7 +231,7 @@ footer {
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid (0, 0, 0, 0.25);
+    border: 1px solid rgb(0, 0, 0, 0.25);
     border-radius: 6px;
 }
 
@@ -258,13 +265,17 @@ footer {
     grid-column: 1 / -1;
     padding: 8px;
     border-radius: 6px;
-    border: 1px solid rgb(0, 0, 0 0.25);
+    border: 1px solid rgb(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
 .employee {
+    margin: 0;
+}
+
+.employees {
     margin-top: 32px;
-    text-align: ceneter;
+    text-align: center;
 }
 
 .employee-grid {
@@ -276,7 +287,7 @@ footer {
 
 .employee img {
     width: 120px;
-    height: auto;
+    height: 150px;
     object-fit: cover;
     border-radius: 6px;
     display: block;
@@ -288,4 +299,123 @@ footer {
     width: 100px;
     font-size: 0.9rem;
     margin: 0 auto;
+}
+
+/* - - - Home Page - - -*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    background: var(--accent-color);
+    color: #023047;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.home-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.newsletter {
+    margin-top: 24px;
+    padding: 10px 14px;
+}
+
+.newsletter-form {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 12px 16px;
+    align-items: center;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.newsletter-form button {
+    grid-column: 1 / -1;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 6px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.home-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.home-card {
+    padding: 16px;
+}
+
+.home-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+
+/* --- Trips Page */
+
+.trips-cta {
+    margin: 16px 0px 24px;
+    text-align: center;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.trip-card {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.trips-table {
+    margin-top: 40px;
+    grid-column: 1 / -1;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    table-layout: fixed;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 12px;
+    text-align: left;
+}
+
+.trips-table th {
+    background: var(--secondary-color);
+    color: white;
 }
